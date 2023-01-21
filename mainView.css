@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Days+One&family=Raleway&display=swap');
+
+h1 {
+    font-size: 120px;
+    margin-top: 30px;
+    font-family: 'Days One', sans-serif;
+    background: linear-gradient(to right, #FDFBFB, #EBEDEE 70%);
+}
+
+.text {
+	text-transform: uppercase;
+	background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

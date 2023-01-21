@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: #6c36d8;
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(
+      45deg,
+      white 50%,
+      #252525 50%
+    );
+    
+    /* Set the background size and repeat properties. */
+    background-size: 270%;
+    background-repeat: repeat;
+    background-position: top right;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  
+    
+    animation: button-animation 0.65s 0.15s ease-out forwards;
+  }
+  
+  button:hover, button:hover span{
+      animation: button-animation-rev 0.65s ease-out forwards;
+  }
+  
+  button:hover {
+    box-shadow: 3px 2px 10px 1px rgba(0,0,0,0.15);
+    transition: 0.5s;
+  }
+  
+  @keyframes button-animation {
+    0% {
+      background-position: top right;
+    }
+    100% {
+      background-position: top left;
+    }
+  }
+  
+  @keyframes button-animation-rev {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  
+  button {
+    margin: auto;
+    margin-top: 10%;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-size: 200%;
+    background-repeat: repeat;
+    background-position: top right;
+    animation: button-animation 0.65s 0.15s ease-out forwards;
+    display: table;
+    border-radius: 0.5em;
+    text-decoration: none;
+    box-shadow: 7px 4px 20px 1px rgba(0,0,0,0.15);
+    padding: 1em 0;
+    cursor: pointer;
+  }
+  
+  button span {
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 0 1.5em;
+  }
