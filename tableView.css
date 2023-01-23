@@ -3,7 +3,21 @@
 button {
     padding: 20px 60px;
     font-family: 'Nunito', sans-serif;
-    font-size: 2.3em;
-    background: transparent;
+    font-size: 2.5em;
+    background-color: #ad80e1;
     border: 0;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: transparent;
+    padding: 10px;
+    margin: 100px;
+}
+
+.grid-item {
+    background-color: #ad80e1;
+    margin: 0.1em;
+    text-align: center;
+  }
