@@ -11,11 +11,12 @@ function guessButton_Click(){
     if (username == 'player1')
         alert("Continue with default name? (player1)");
 
-    location.href="guess.html";
-
+    showTable(0);
 }
 
 function talkButton_Click(){
     if (username == 'player1')
         alert("Continue with default name? (player1)");
+    
+    showTable(1);
 }
